@@ -16,6 +16,8 @@ This project is designed to reinforce Python fundamentals while simulating a bas
 
 📂 Project Structure
 
+```
+
 login-log-parser/
 │
 ├── src/
@@ -30,7 +32,7 @@ login-log-parser/
 ├── README.md
 ├── requirements.txt
 
-
+```
 ⸻
 
 🧠 Data Format
