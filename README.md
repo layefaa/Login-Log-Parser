@@ -4,14 +4,14 @@ A simple Python project for parsing login logs, detecting failed attempts, and i
 This project is designed to reinforce Python fundamentals while simulating a basic security monitoring tool.
 
 ⸻
-
+```
 📌 Features
 	•	Parse raw login log lines into structured data
 	•	Load and process log files
 	•	Count failed login attempts per IP
 	•	Detect suspicious IPs based on a threshold
 	•	Generate a human-readable summary report
-
+```
 ⸻
 
 📂 Project Structure
@@ -38,19 +38,19 @@ login-log-parser/
 🧠 Data Format
 
 Each log entry is represented as a dictionary:
-
+```
 {
     "ip": "192.168.1.1",
     "user": "admin",
     "success": False,
     "time": "08:01"
 }
-
+```
 
 ⸻
 
 ⚙️ Core Functions
-
+```
 parse_log_line(line: str) -> dict
 
 Parses a single log line into a structured dictionary.
@@ -70,7 +70,7 @@ Returns a list of IPs with failed attempts above a given threshold.
 summary_report(logs: list[dict]) -> str
 
 Generates a readable summary of login activity.
-
+```
 ⸻
 
 🧪 Installation & Setup
@@ -99,7 +99,7 @@ python src/main.py sample.log
 ⸻
 
 📊 Example Output
-
+```
 Total logins: 5
 Failed logins: 4
 
@@ -111,7 +111,7 @@ Top offenders (threshold = 2):
 192.168.1.1
 10.0.0.5
 
-
+```
 ⸻
 
 🧪 Running Tests
@@ -120,7 +120,7 @@ pytest
 
 
 ⸻
-
+```
 🛠️ Development Tools
 	•	ruff → linting
 	•	mypy → static type checking
@@ -130,7 +130,7 @@ pytest
 ruff check .
 mypy .
 bandit -r .
-
+```
 
 ⸻
 
